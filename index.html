@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Website</title>
+        <!-- add icon link -->
+        <!--link rel = "icon" href =  
+"../png-transparent-marlon-brando-the-godfather-vito-corleone-gangster-design-thumbnail.png" 
+        type = "image/x-icon"--> 
+
+        <link rel = "icon" href =  
+"/Volumes/FS USBDRIVE/img1.jpeg" 
+        type = "image/x-icon">
+
+	<style>
+		/* Set display to none for image*/
+		#image {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Test Website</h1>
+		<h3>Click on the first button to see image</h3>
+		<!-- Add id to image -->
+		<img id="image"
+			src=
+"../rpi4.png"
+			alt="Pi image" />
+	</div>
+	<button type="button" onclick="show()" id="btnID">Display Image</button>
+
+	<script>
+		function show() {
+			/* Access image by id and change 
+			the display property to block*/
+			document.getElementById("image")
+				.style.display = "block";
+			document.getElementById('btnID')
+				.style.display = "none";
+		}
+	</script>
+  <button onclick="showList1()">Show List 1</button>
+  <button onclick="showList2()">Show List 2</button>
+  <button onclick="showTable()">Show Table</button>
+  <template>
+  <h2>Ordered List of Fruits</h2>
+  <ol>
+    <li>Strawberries</li>
+    <li>Plums</li>
+    <li>Oranges</li>
+    <li>Melons</li>
+    <li>Tomatoes</li>
+    <li>Grapes</li>
+  </ol>
+</template>
+<template>
+  <h2>Unordered List of Fruits</h2>
+  <ul>
+    <li>Strawberries</li>
+    <li>Plums</li>
+    <li>Oranges</li>
+    <li>Melons</li>
+    <li>Tomatoes</li>
+    <li>Grapes</li>
+  </ul>
+</template>
+<template>
+<table>
+  <tr>
+    <th>Fruits</th>
+    <th>Vegetables</th>
+    <th>Locations</th>
+    <th>Car Types</th>
+  </tr>
+  <tr>
+    <td>Orange</td>
+    <td>Potato</td>
+    <td>Brazil</td>
+    <td>Sedan</td>
+  </tr>
+  <tr>
+    <td>Strawberry</td>
+    <td>Carrot</td>
+    <td>France</td>
+    <td>Truck</td>
+  </tr>
+  <tr>
+    <td>Blueberry</td>
+    <td>Corn</td>
+    <td>Sydney</td>
+    <td>SUV</td>
+  </tr>
+</table> 
+</template>
+  <script>
+    function showList1() {
+      let temp = document.getElementsByTagName("template")[0]
+      let clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+    function showList2() {
+      let temp = document.getElementsByTagName("template")[1]
+      let clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+    function showTable() {
+      let temp = document.getElementsByTagName("template")[2]
+      let clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+    }
+  </script>
+</body>
+</html>
+
