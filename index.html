@@ -14,5 +14,35 @@
 <div>
 <h2>Click on the button below to see our team members.</h2>
 </div>
+        
+</script>
+  <button onclick="showTeamList()">Team Members</button>
+<template>
+  <ul>
+          <li>Nicholas Amely</li>
+          <li>Lawrence Rede</li>
+          <li>Luis Villanueva</li>
+          <li>Adam Garabedian</li>
+          <li>Oludayo Iredele</li>
+          <li>Sydney Rivera</li>
+          <li>Vanessa Jauregui-Salgado</li>
+          <li>Jason Yang</li>
+          <li>Ankit Sharma</li>
+          <li>David Garcia-Rodriguez</li>
+          <li>Rowan Elansary</li>
+          <li>Daniel Medina</li>
+          <li>Angel Cervantes Gama</li>
+          <li>Daniel Gebran</li>
+          <li>Andrew Halvorsen</li>
+          <li>Achuth Vinay</li>
+  </ul>
+</template>
+  <script>
+    function showTeamList() {
+      let temp = document.getElementsByTagName("template")[0]
+      let clon = temp.content.cloneNode(true);
+      document.body.appendChild(clon);
+  </script>
 </body>
 </body>
+</html>
