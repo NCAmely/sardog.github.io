@@ -1,47 +1,68 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>SARDOG Control</title>
-        <add icon link>
-        <link rel = "icon" href =  
-"https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/278.png" 
-        type = "image/x-icon"> 
+    <title>SARDOG</title>
+    <meta name="description" content="Learn about Fresno State's SARDOG project, apply to be on the team today!"/>
+    <meta name="keywords" content="sardog, lcoe, engineering, agtech, robot"/>
+    <meta http-equiv="author" content="Nicholas Amely"/>
+    <meta http-equiv="content-language" content="en-us"/>
 </head>
 <body>
-<body background="SARDOG_Photo.png">
-  <h1><font color=red>SARDOG Control Center</font></h1>
-  <h2><font color=green>Control the Fresno State developed SARDOG and all of its peripherals directly through this website.</font></h2>
-<div>
-<h2>Click on the button below to see our team members.</h2>
-</div>
-        
-<button onclick="showTeamList()">Team Members</button>
-<template>
-  <ul>
-          <li>Nicholas Amely</li>
-          <li>Lawrence Rede</li>
-          <li>Luis Villanueva</li>
-          <li>Adam Garabedian</li>
-          <li>Oludayo Iredele</li>
-          <li>Sydney Rivera</li>
-          <li>Vanessa Jauregui-Salgado</li>
-          <li>Jason Yang</li>
-          <li>Ankit Sharma</li>
-          <li>David Garcia-Rodriguez</li>
-          <li>Rowan Elansary</li>
-          <li>Daniel Medina</li>
-          <li>Angel Cervantes Gama</li>
-          <li>Daniel Gebran</li>
-          <li>Andrew Halvorsen</li>
-          <li>Achuth Vinay</li>
-  </ul>
-</template>
-  <script>
-    function showTeamList() {
-      let temp = document.getElementsByTagName("template")[0]
-      let clon = temp.content.cloneNode(true);
-      document.body.appendChild(clon);
-  </script>
+    <div>
+        <h1><font size=10>SARDOG - The <b>S</b>mart <b>A</b>gricultural <b>R</b>obot <b>B</b>ull<b>DOG</b></font></h1>
+        <img src="SARDOG_Portrait.png" alt="sardogpic" style="float:left">
+    </div>
+    <div>
+        <form action = "method">
+            <fieldset>
+            <legend><h2>Interest Form</h2></legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname"> <br><br>
+
+            <label for="stud">Are you a student?</label><br>
+            Yes:
+            <input type="radio" id="stud" name="student">
+            No:
+            <input type="radio" id="stud" name="non-student"><br><br>
+
+            <label for="team">Are you interested in joining the team?</label><br>
+            Yes:
+            <input type="radio" id="team" name="yesteam">
+            No:
+            <input type="radio" id="team" name="noteam"><br><br>
+
+            <label for="resback">What is your <em>research</em> background?</label><br>
+            <input type="checkbox" id="resback" name="softwareback">Software<br>
+            <input type="checkbox" id="resback" name="hardwareback">Hardware<br>
+            <input type="checkbox" id="resback" name="AIback">AI/ML<br>
+            <input type="checkbox" id="resback" name="embeddedback">Embedded Systems<br>
+            <input type="checkbox" id="resback" name="CADback">CAD<br>
+            <input type="checkbox" id="resback" name="photoback">Photography<br><br>
+
+            <label for="eduback">What is your <em>educational</em> background?</label><br>
+            <select>
+                <option id="eduback" value="none">None</option>
+                <option id="eduback" value="highschoolprog">High School Diploma (in progress)</option>
+                <option id="eduback" value="highschoolcomp">High School Diploma (completed)</option>
+                <option id="eduback" value="bsprog">Bachelor's Degree (in progress)</option>
+                <option id="eduback" value="bscomp">Bachelor's Degree (completed)</option>
+                <option id="eduback" value="msprog">Master's Degree (in progress)</option>
+                <option id="eduback" value="mscomp">Master's Degree (completed)</option>
+                <option id="eduback" value="phdprog">Doctorate Degree (in progress)</option>
+                <option id="eduback" value="phdcomp">Doctorate Degree (completed)</option>
+            </select><br><br>
+
+            <label for="age">How old are you?</label><br>
+            <input type="number" id="age" name="age" min="10" max="90"><br><br>
+
+            <label for="mes">Why do you want to join our team?</label><br>
+            <textarea id="mes" name="interest" rows="8" cols="55"></textarea><br>
+            <input type="submit" id="mes" value="Submit to the team">
+        </fieldset>
+        </form>
+    </div>
+
 </body>
-</body>
+
 </html>
