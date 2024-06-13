@@ -24,10 +24,14 @@
         p.subHeader{
             font-size: 50px;
             padding: 10px;
-            margin-left: 540px;
+            text-align: center;
+            border: 2px solid black;
+            border-left-width: 0px; 
+            border-right-width: 0px;
+            /*margin-left: 540px;
             margin-right: 540px;
             margin-bottom: 30px;
-            border: 2px solid black;
+            border: 2px solid black;*/
         }
         .verdana{
             font-family: verdana;
@@ -37,6 +41,38 @@
         }
         .nomargin{
             margin: 0px;
+        }
+        .formbody{
+            background-image: url("grass-background2.jpeg");
+            text-align: center;
+            margin-left: 550px;
+            margin-right: 150px;
+            margin-top: 150px;
+            border: 8px ridge green;
+            font-family: Courier;
+        }
+        .imageleft{
+            display: block;
+            float: left;
+            margin-left: 25px;
+            border: 4px ridge black;
+        }
+        .Courier{
+            font-family: Courier;
+        }
+        #submitbutton{
+            background-color: black;
+            color: white;
+            font-family:cursive;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        #submitbutton:hover{
+            background-color: white;
+            color: black;
+            font-family:cursive;
+            font-size: 20px;
+            margin-top: 20px;
         }
     </style>
     <title>SARDOG</title>
@@ -52,11 +88,11 @@
     <div>
         <p class="subHeader">Contact Us!</p>
     </div>
-    <img src="SARDOG_Portrait.png" alt="sardogpic" style="float:left">
+    <img src="SARDOG_Portrait.png" alt="sardogpic" class = "imageleft">
     <div>
         <form action = "method">
-            <fieldset>
-            <legend><h2>Interest Form</h2></legend>
+            <fieldset class="formbody">
+            <!--legend><h2>Interest Form</h2></legend-->
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname">
             <label for="lname">Last Name:</label>
@@ -83,7 +119,7 @@
             <input type="checkbox" id="resback" name="photoback">Photography<br><br>
 
             <label for="eduback">What is your <em>educational</em> background?</label><br>
-            <select>
+            <select class="Courier">
                 <option id="eduback" value="none">None</option>
                 <option id="eduback" value="highschoolprog">High School Diploma (in progress)</option>
                 <option id="eduback" value="highschoolcomp">High School Diploma (completed)</option>
@@ -96,11 +132,11 @@
             </select><br><br>
 
             <label for="age">How old are you?</label><br>
-            <input type="number" id="age" name="age" min="10" max="90"><br><br>
+            <input class="Courier" type="number" id="age" name="age" min="10" max="90"><br><br>
 
             <label for="mes">Why do you want to join our team?</label><br>
             <textarea id="mes" name="interest" rows="8" cols="55"></textarea><br>
-            <input type="submit" id="mes" value="Submit to the team">
+            <input type="submit" id="submitbutton" value="Submit to the team">
         </fieldset>
         </form>
     </div>
