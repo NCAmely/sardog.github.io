@@ -1,0 +1,128 @@
+p.Header{
+    font-size: 50px;
+    font-family: 'Trebuchet MS';
+    color: rgb(255,255,255);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0px;
+    margin-bottom: 50px;
+    background-color: rgb(150,150,150);
+}
+.bigHeader{
+    font-size: 75px;
+    font-family: 'Trebuchet MS';
+    color: black;
+}
+p.subHeader{
+    font-size: 50px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    border-left-width: 0px; 
+    border-right-width: 0px;
+    /*margin-left: 540px;
+    margin-right: 540px;
+    margin-bottom: 30px;
+    border: 2px solid black;*/
+}
+.verdana{
+    font-family: verdana;
+}
+.gray{
+    background-color: rgb(225,225,225);
+}
+.nomargin{
+    margin: 0px;
+}
+.formbody{
+    background-image: url("images/grass-background2.jpeg");
+    text-align: center;
+    margin-left: 550px;
+    margin-right: 150px;
+    margin-top: 150px;
+    border: 8px ridge green;
+    border-radius: 10px;
+    font-family: Courier;
+}
+.imageleft{
+    display: block;
+    float: left;
+    margin-left: 25px;
+    border: 4px ridge black;
+}
+.Courier{
+    font-family: Courier;
+}
+#submitbutton{
+    background-color: black;
+    color: white;
+    font-family:cursive;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#submitbutton:hover{
+    background-color: white;
+    color: black;
+    font-family:cursive;
+    font-size: 20px;
+    margin-top: 20px;
+    transition-property: background-color;
+    transition-property: color;
+    transition-timing-function: ease-out;
+    transition-duration: 0.75s;
+}
+@keyframes slideinRight{
+    from{
+        transform: translateX(1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.slideinRight{
+    animation-name: slideinRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes slideinLeft{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.slideinLeft{
+    animation-name: slideinLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes expand{
+    from{
+        transform: scale3d(1,1,1);
+    }
+    to{
+        transform: scale3d(1.5,1.5,1);
+    }
+}
+@keyframes expandfrom0{
+    from{
+        transform: scale3d(0,0,0);
+    }
+    to{
+        transform: scale3d(1,1,1);
+    }
+}
+.pulse{
+    --pulseDelay: 0.5s;
+    animation: expand var(--pulseDelay) ease-out 2s normal, expand var(--pulseDelay) ease-in 2.5s reverse, 
+        expand var(--pulseDelay) ease-out 3s normal, expand var(--pulseDelay) ease-in 3.5s reverse;
+}
+.growIn{
+    animation: expandfrom0 1s ease-out 2s backwards;
+}
