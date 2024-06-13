@@ -1,80 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        p.Header{
-            font-size: 50px;
-            font-family: 'Trebuchet MS';
-            color: rgb(255,255,255);
-            <!-- border: 10px dotted gray; -->
-            padding: 10px;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            margin: 0px;
-            margin-bottom: 50px;
-            background-color: rgb(150,150,150);
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        function submitFunction(){
+            alert("The team is working on enabling this functionality!")
         }
-        .bigHeader{
-            font-size: 75px;
-            font-family: 'Trebuchet MS';
-            color: black;
-        }
-        p.subHeader{
-            font-size: 50px;
-            padding: 10px;
-            text-align: center;
-            border: 2px solid black;
-            border-left-width: 0px; 
-            border-right-width: 0px;
-            /*margin-left: 540px;
-            margin-right: 540px;
-            margin-bottom: 30px;
-            border: 2px solid black;*/
-        }
-        .verdana{
-            font-family: verdana;
-        }
-        .gray{
-            background-color: rgb(225,225,225);
-        }
-        .nomargin{
-            margin: 0px;
-        }
-        .formbody{
-            background-image: url("grass-background2.jpeg");
-            text-align: center;
-            margin-left: 550px;
-            margin-right: 150px;
-            margin-top: 150px;
-            border: 8px ridge green;
-            font-family: Courier;
-        }
-        .imageleft{
-            display: block;
-            float: left;
-            margin-left: 25px;
-            border: 4px ridge black;
-        }
-        .Courier{
-            font-family: Courier;
-        }
-        #submitbutton{
-            background-color: black;
-            color: white;
-            font-family:cursive;
-            font-size: 20px;
-            margin-top: 20px;
-        }
-        #submitbutton:hover{
-            background-color: white;
-            color: black;
-            font-family:cursive;
-            font-size: 20px;
-            margin-top: 20px;
-        }
-    </style>
+    </script>
     <title>SARDOG</title>
     <meta name="description" content="Learn about Fresno State's SARDOG project, apply to be on the team today!"/>
     <meta name="keywords" content="sardog, lcoe, engineering, agtech, robot"/>
@@ -86,12 +19,12 @@
         <p class="Header"><b class="bigHeader">SARDOG</b> - The <b class="bigHeader">S</b>mart <b class="bigHeader">A</b>gricultural <b class="bigHeader">R</b>obot Bull<b class="bigHeader">DOG</b></p>
     </div>
     <div>
-        <p class="subHeader">Contact Us!</p>
+        <p class="subHeader growIn">Contact Us!</p>
     </div>
-    <img src="SARDOG_Portrait.png" alt="sardogpic" class = "imageleft">
+    <img src="images/SARDOG_Portrait.png" alt="sardogpic" class="imageleft slideinLeft">
     <div>
         <form action = "method">
-            <fieldset class="formbody">
+            <fieldset class="formbody slideinRight">
             <!--legend><h2>Interest Form</h2></legend-->
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="firstname">
@@ -136,7 +69,7 @@
 
             <label for="mes">Why do you want to join our team?</label><br>
             <textarea id="mes" name="interest" rows="8" cols="55"></textarea><br>
-            <input type="submit" id="submitbutton" value="Submit to the team">
+            <input type="button" id="submitbutton" value="Submit to the team" onclick="submitFunction()">
         </fieldset>
         </form>
     </div>
