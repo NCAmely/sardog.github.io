@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        function submitFunction(){
+            alert("The team is working on enabling this functionality!")
+        }
+    </script>
+    <title>SARDOG</title>
+    <meta name="description" content="Learn about Fresno State's SARDOG project, apply to be on the team today!"/>
+    <meta name="keywords" content="sardog, lcoe, engineering, agtech, robot"/>
+    <meta http-equiv="author" content="Nicholas Amely"/>
+    <meta http-equiv="content-language" content="en-us"/>
+</head>
+<body class="gray nomargin" style="text-align: center">
+    <div class="darkgray">
+    <div class="dropdown">
+        <input type="image" src="images/SARDOG_Logo.png" alt="sardoglogo" height=60px class="logo">
+        <div class="dropdown-content">
+            <a href="https://namlick.github.io/sardog.github.io/">Home</a>
+            <a href="http://100.126.90.70:5000/">Remote Access</a>
+            <a href="#">Awards</a>
+            <a href="https://namlick.github.io/sardog.github.io/join">Join</a>
+        </div>
+    </div>
+    <div>
+        <p class="Header"><b class="bigHeader">SARDOG |</b> The <b class="bigHeader">S</b>mart <b class="bigHeader">A</b>gricultural <b class="bigHeader">R</b>obot Bull<b class="bigHeader">DOG</b></p>
+    </div>
+    </div>
+    <div>
+        <p class="subHeader growIn">Contact Us!</p>
+    </div>
+    <img src="images/SARDOG_Portrait.png" alt="sardogpic" class="imageleft slideinLeft">
+    <div>
+        <form action = "method">
+            <fieldset class="formbody slideinRight">
+            <!--legend><h2>Interest Form</h2></legend-->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" class="Courier">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" class="Courier"> <br><br>
+
+            <label for="stud">Are you a student?</label><br>
+            Yes:
+            <input type="radio" id="stud" name="student">
+            No:
+            <input type="radio" id="stud" name="student"><br><br>
+
+            <label for="team">Are you interested in joining the team?</label><br>
+            Yes:
+            <input type="radio" id="team" name="team">
+            No:
+            <input type="radio" id="team" name="team"><br><br>
+
+            <label for="resback">What is your <em>research</em> background?</label><br>
+            <input type="checkbox" id="resback" name="softwareback">Software<br>
+            <input type="checkbox" id="resback" name="hardwareback">Hardware<br>
+            <input type="checkbox" id="resback" name="AIback">AI/ML<br>
+            <input type="checkbox" id="resback" name="embeddedback">Embedded Systems<br>
+            <input type="checkbox" id="resback" name="CADback">CAD<br>
+            <input type="checkbox" id="resback" name="photoback">Photography<br><br>
+
+            <label for="eduback">What is your <em>educational</em> background?</label><br>
+            <select class="Courier">
+                <option id="eduback" value="none">None</option>
+                <option id="eduback" value="highschoolprog">High School Diploma (in progress)</option>
+                <option id="eduback" value="highschoolcomp">High School Diploma (completed)</option>
+                <option id="eduback" value="bsprog">Bachelor's Degree (in progress)</option>
+                <option id="eduback" value="bscomp">Bachelor's Degree (completed)</option>
+                <option id="eduback" value="msprog">Master's Degree (in progress)</option>
+                <option id="eduback" value="mscomp">Master's Degree (completed)</option>
+                <option id="eduback" value="phdprog">Doctorate Degree (in progress)</option>
+                <option id="eduback" value="phdcomp">Doctorate Degree (completed)</option>
+            </select><br><br>
+
+            <label for="age">How old are you?</label><br>
+            <input class="Courier" type="number" id="age" name="age" min="10" max="90"><br><br>
+
+            <label for="mes">Why do you want to join our team?</label><br>
+            <textarea id="mes" name="interest" rows="8" cols="55"></textarea><br>
+            <input type="button" id="submitbutton" value="Submit to the team" onclick="submitFunction()">
+        </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
