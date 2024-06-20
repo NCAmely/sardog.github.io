@@ -5,7 +5,7 @@
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
-    background-color: black;
+    background-color: #13284c;
 }
 .logo:hover{
     transform: rotate(360deg);
@@ -21,7 +21,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(225,225,225);
+    background-color: white;
     min-width: 160px;
     border: 1px solid #ffd700;
     box-shadow: 0px 4px 8px 0px #ffd700;
@@ -32,18 +32,21 @@
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: #b1102b;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-align: left;
+    border-top: 2px dotted whitesmoke;
   }
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
-    background-color: green;
+    background-color: #13284c;
     transition-property: background-color;
     transition-duration: 0.5s;
     transition-timing-function: linear;
+    border-top-width: 0px;
   }
   
   /* Show the dropdown menu on hover */
@@ -53,12 +56,12 @@
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .logo{
-    background-color: #ff0000;
+    background-color: #b1102b;
   }
 p.Header{
     font-size: 45px;
     font-family: 'Trebuchet MS';
-    color: rgb(255,255,255);
+    color: #b1102b;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -71,14 +74,14 @@ p.Header{
 .bigHeader{
     font-size: 70px;
     font-family: 'Trebuchet MS';
-    color: black;
+    color: #13284c;
     text-align: center;
 }
 .darkgray{
-    background-color: rgb(150,150,150);
+    background-color: #ced1d4/*rgb(150,150,150)*/;
 }
 .gray{
-    background-color: rgb(225,225,225);
+    background-color: white/*rgb(225,225,225)*/;
 }
 .nomargin{
     margin: 0px;
