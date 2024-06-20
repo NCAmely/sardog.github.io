@@ -83,6 +83,9 @@ p.Header{
 .nomargin{
     margin: 0px;
 }
+.textcenter{
+    text-align: center;
+}
 @keyframes pulseboxshadow{
     from{
         box-shadow: 0px 0px 0px 0px gold;
@@ -111,15 +114,19 @@ p.subHeader{
 .verdana{
     font-family: verdana;
 }
+.centerbody{
+    align-items: center;
+}
 .formbody{
     background-image: url("images/grass-background2.jpeg");
     text-align: center;
-    margin-left: 550px;
-    margin-right: 150px;
+    /*margin-left: 550px;
+    margin-right: 150px;*/
     margin-top: 150px;
     border: 8px ridge rgb(0, 128, 0);
     border-radius: 10px;
     font-family: Courier;
+    font-weight: bolder;
 }
 .formbody:focus-within{
     box-shadow: 0px 0px 10px 15px rgb(112, 224, 112);
@@ -128,6 +135,12 @@ p.subHeader{
     display: block;
     float: left;
     margin-left: 25px;
+    border: 4px ridge black;
+}
+.imageright{
+    display: block;
+    float: right;
+    margin-right: 25px;
     border: 4px ridge black;
 }
 .imagecenter{
@@ -172,7 +185,7 @@ p.subHeader{
     animation-name: slideinRight;
     animation-duration: 2s;
     animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
+    /*animation-fill-mode: forwards;*/
 }
 @keyframes slideinLeft{
     from{
@@ -211,4 +224,22 @@ p.subHeader{
 }
 .growIn{
     animation: expandfrom0 1s ease-out 2s backwards;
+}
+#HKsection{
+    margin-top: 500px;
+    text-align: right;
+}
+#NAimage{
+    margin-right: 30px;
+}
+#HKimage{
+    margin-left: 30px;
+}
+#HKheader, #NAheader{
+    text-align: center;
+    font-size: 30px;
+}
+#HKtext, #NAtext{
+    text-align: center;
+    font-size: 20px;
 }
