@@ -34,7 +34,11 @@
 </div>
 <!-------------------HTML HEADER CONTENT------------------->
     <div>
-    def LEDpattern():
+    from microbit import *
+    <br>import speech
+
+    <br>speed = 100
+    <br>def LEDpattern():
         <br>pin0.write_digital(1)
         <br>pin1.write_digital(0)
         <br>pin2.write_digital(0)
@@ -58,6 +62,17 @@
             <br>display.show(Image.HEART)
             <br>return 0
         <br>return 1
+    <br>while True:
+        <br>LEDreset()
+        <br>display.show(Image.HEART)
+        <br>check=1
+        <br>if button_a.is_pressed():
+           <br>display.show(Image.YES)
+            <br>speech.say("Pattern initiated", pitch=10, speed=120, mouth=200)
+            <br>display.show(Image.HEART)
+            <br>while check==1:
+                <br>LEDpattern()
+                <br>check=LEDcheck()
     </div>
 </body>
 
