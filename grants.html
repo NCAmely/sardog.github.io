@@ -35,29 +35,29 @@
 <!-------------------HTML HEADER CONTENT------------------->
     <div>
     def LEDpattern():
-        pin0.write_digital(1)
-        pin1.write_digital(0)
-        pin2.write_digital(0)
-        sleep(speed)
-        pin0.write_digital(0)
-        pin1.write_digital(1)
-        pin2.write_digital(0)
-        sleep(speed)
-        pin0.write_digital(0)
-        pin1.write_digital(0)
-        pin2.write_digital(1)
-        sleep(speed)
-    def LEDreset():
-        pin0.write_digital(0)
-        pin1.write_digital(0)
-        pin2.write_digital(0)
-    def LEDcheck():
-        if button_b.is_pressed():
-            display.show(Image.NO)
-            speech.say("Pattern terminated", pitch=10, speed=120, mouth=200)
-            display.show(Image.HEART)
-            return 0
-        return 1
+        <br>pin0.write_digital(1)
+        <br>pin1.write_digital(0)
+        <br>pin2.write_digital(0)
+        <br>sleep(speed)
+        <br>pin0.write_digital(0)
+        <br>pin1.write_digital(1)
+        <br>pin2.write_digital(0)
+        <br>sleep(speed)
+        <br>pin0.write_digital(0)
+        <br>pin1.write_digital(0)
+        <br>pin2.write_digital(1)
+        <br>sleep(speed)
+    <br>def LEDreset():
+        <br>pin0.write_digital(0)
+        <br>pin1.write_digital(0)
+        <br>pin2.write_digital(0)
+    <br>def LEDcheck():
+        <br>if button_b.is_pressed():
+            <br>display.show(Image.NO)
+            <br>speech.say("Pattern terminated", pitch=10, speed=120, mouth=200)
+            <br>display.show(Image.HEART)
+            <br>return 0
+        <br>return 1
     </div>
 </body>
 
