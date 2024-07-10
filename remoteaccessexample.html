@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="RAstyle.css">
+<script>
+    function placeholderSubmit(){
+        alert("This page is just a template, backend functionality is not enabled.")
+    }
+</script>
+    
+<!-------------------HTML HEADER CONTENT------------------->
+<title>SARDOG Remote Access</title>
+<meta name="description" content="Learn about Fresno State's SARDOG project, apply to be on the team today!"/>
+<meta name="keywords" content="sardog, lcoe, engineering, agtech, robot"/>
+<meta http-equiv="author" content="Nicholas Amely"/>
+<meta http-equiv="content-language" content="en-us"/>
+</head>
+<body class="gray nomargin center">
+<div class="darkgray">
+<div class="dropdown">
+    <input type="image" src="images/SARDOG_Logo.png" alt="sardoglogo" height=60px class="logo pulseboxshadow">
+    <div class="dropdown-content">
+        <a href="https://ncamely.github.io/sardog.github.io/">Home</a>
+        <a href="http://100.126.90.70:5000/">Remote Access <b class="sublabels">Authorized Users Only</b></a>
+        <a href="https://ncamely.github.io/sardog.github.io/remoteaccessexample">Remote Access <b class="sublabels">Template</b></a>
+        <a href="https://ncamely.github.io/sardog.github.io/awards">Awards</a>
+        <a href="https://ncamely.github.io/sardog.github.io/publications">Publications</a>
+        <a href="https://ncamely.github.io/sardog.github.io/grants">Grants</a>
+        <a href="https://ncamely.github.io/sardog.github.io/join">Join</a>
+    </div>
+</div>
+<div>
+    <p class="Header"><b class="bigHeader">SARDOG |</b> <b class="bigHeader">S</b>mart <b class="bigHeader">A</b>gricultural <b class="bigHeader">R</b>obot Bull<b class="bigHeader">DOG</b></p>
+</div>
+</div>
+<!-------------------HTML HEADER CONTENT------------------->
+<div id="controlsection">
+<!--h2>Fruit Harvesting System (Old method)</h2>
+<form action="/detect_fruit">
+    <label>
+        <input type="button" value="Start the system" onclick="submit();" class="switch greenbackground">
+    </label>
+</form-->
+<h2 class="headerlabel darkgray">Fruit Harvesting System</h2>
+<form action="{{ url_for('home')}}" method="post" id="fruitnewform" class="darkgray">
+    <input type="radio" value="Start the system" name="armbutton" id="armstart" class="switch greenbackground">
+    <input type="radio" value="Stop the system" name="armbutton" id="armstop" class="switch redbackground">
+    <br><label for="armstart" class="switchlabel">Start</label>
+    <label for="armstop" class="switchlabel">Stop</label>
+    <br><input type="button" class="commandbutton" onclick="placeholderSubmit()" value="Send command">
+    <br><img src="{{ url_for('video') }}" width="80%" class="realtimevideo">
+</form>
+<h2 class="headerlabel darkgray">Soil Testing System</h2>
+<form action="{{ url_for('home')}}" method="post" id="soilform" class="darkgray">
+    <input type="radio" value="Raise the sensor" name="soilbutton" id="soilraise" class="switch switchmargin greenbackground">
+    <input type="radio" value="Lower the sensor" name="soilbutton" id="soillower" class="switch redbackground">
+    <br><label for="soilraise" class="switchlabel">Raise</label>
+    <label for="soillower" class="switchlabel">Lower</label>
+    <br><label for="timeDelay" class="timedelay">Enter time delay: </label>
+    <input type="number" id="timeDelay" name="soiltimedelay" placeholder="seconds" max="25" class="timedelay">
+    <br><input type="button" class="commandbutton" onclick="placeholderSubmit()" value="Send command">
+</form>
+<h2 class="headerlabel darkgray">Weed Elimination System</h2>
+<form action="{{ url_for('home')}}" method="post" id="weedform" class="darkgray">
+    <input type="radio" value="Start the system" name="weedbutton" id="weedstart" class="switch greenbackground">
+    <input type="radio" value="Stop the system" name="weedbutton" id="weedstop" class="switch redbackground">
+    <br><label for="weedstart" class="switchlabel">Start</label>
+    <label for="weedstop" class="switchlabel">Stop</label>
+    <br><input type="button" class="commandbutton" onclick="placeholderSubmit()" value="Send command">
+</form>
+</div>
+</body>
+</html>

@@ -58,6 +58,11 @@
 .dropdown:hover .logo{
   background-color: #b1102b;
 }
+.sublabels{
+    font-family: Courier;
+    font-size: 10px;
+    margin-top: 0px;
+}
 p.Header{
   font-size: 45px;
   font-family: 'Trebuchet MS';
