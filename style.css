@@ -195,12 +195,12 @@ p.subHeader{
     animation-timing-function: ease-out;
     /*animation-fill-mode: forwards;*/
 }
-.slideinRightdelay2{
+.slideinRightdelay1{
     animation-name: slideinRight;
     animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode:both;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 @keyframes slideinLeft{
     from{
@@ -216,12 +216,12 @@ p.subHeader{
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
-.slideinLeftdelay2{
+.slideinLeftdelay1{
     animation-name: slideinLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode: both;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 @keyframes expand{
     from{
@@ -260,8 +260,12 @@ p.subHeader{
 #HKheader, #NAheader{
     text-align: center;
     font-size: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 #HKtext, #NAtext{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
