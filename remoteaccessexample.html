@@ -69,6 +69,23 @@
     <label for="weedstop" class="switchlabel">Stop</label>
     <br><input type="button" class="commandbutton" onclick="placeholderSubmit()" value="Send command">
 </form>
+<h2 class="headerlabel darkgray">SARDOG Movement Control</h2>
+<form action="{{ url_for('home')}}" method="post" id="moveform" class="darkgray">
+    <input type="radio" value="Move forward" name="movebutton" id="moveforward" class="switch switchmargin greenbackground">
+    <br><label for="moveforward" class="switchlabel">Forward</label>
+    <br><input type="radio" value="Move left" name="movebutton" id="moveleft" class="switch switchmargin greenbackground">
+    <input type="radio" value="Move right" name="movebutton" id="moveright" class="switch switchmargin greenbackground">
+    <br><label for="moveleft" class="switchlabel">Left</label>
+    <label for="moveright" class="switchlabel">Right</label>
+    <br><input type="radio" value="Move backward" name="movebutton" id="movebackward" class="switch switchmargin greenbackground">
+    <br><label for="movebackward" class="switchlabel">Backward</label>
+    <br><input type="radio" value="Move stop" name="movebutton" id="movestop" class="switch redbackground">
+    <br><label for="movestop" class="switchlabel">Stop</label>
+
+    <!--br><label for="timeDelay" class="timedelay">Enter time delay: </label>
+    <input type="number" id="timeDelay" name="soiltimedelay" placeholder="seconds" max="25" class="timedelay"-->
+    <br><input type="button" class="commandbutton" onclick="placeholderSubmit()" value="Send command">
+</form>
 </div>
 </body>
 </html>
