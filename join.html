@@ -3,10 +3,24 @@
 <head>
 <!-------------------HTML HEADER CONTENT------------------->
 <link rel="stylesheet" type="text/css" href="style.css">
-
-<script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
     function placeholderSubmit(){
         alert("The team is working on enabling this functionality!")
+    }
+    function sendEmail() {
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "nicholasamely@gmail.com",
+            Password: "C0llege2024.!",
+            To: 'namely@mail.fresnostate.edu',
+            From: "nicholasamely@gmail.com",
+            Subject: "Sending Email using javascript",
+            Body: "Well that was easy!!",
+        })
+            .then(function (message) {
+                alert("mail sent successfully")
+            });
     }
 </script>
 <link rel="icon" type="image/png" href="images/SARDOG_Icon.png">
@@ -86,7 +100,7 @@
 
             <label for="mes">Why do you want to join our team?</label><br>
             <textarea id="mes" name="interest" rows="8" cols="55" class="Courier gray"></textarea><br>
-            <input type="button" id="submitbutton" value="Submit to the team" onclick="placeholderSubmit()">
+            <input type="button" name="submitbutton" value="Submit to the team" onclick="sendEmail()">
         </fieldset>
         </form>
     </div>
